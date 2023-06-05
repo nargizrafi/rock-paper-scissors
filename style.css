@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(133, 118, 106);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.computer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+h1{
+    font-size: 3em;
+    border: none;
+     width: 80%;
+     text-align: center;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.8em;
+    display: flex;
+    gap: 20px;
+}
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.choice{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.rock:hover,.paper:hover,.scissors:hover{
+    box-shadow: 0px 0px 3px white;
+    transform: scale(1.02);
+}
+.comp{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.rock{
+    background-image: url(./rock.png);
+    cursor: pointer;
+}
+.paper{
+    background-image: url(./paper.png);
+    cursor: pointer;
+}
+.scissors{
+    background-image: url(./scissors.png);
+    cursor: pointer;
+}
+.game{
+    width: 80%;
+    padding: 30px 0px 30px 0px;
+    border-top: 2px dashed white;
+    border-bottom: 2px dashed white;
+    display: flex;
+    justify-content: space-between;
+}
+.userchoice{
+    display: flex;
+    gap: 10px;
+}
+.selected{
+    border: 2px solid white;
+    box-shadow: 0px 0px 4px white;
+    transform: scale(1.02);
+}
+.rselected{
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px red;
+    background-image: url(./rock.png);
+    background-position: center;
+}
+.sselected{
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px red;
+    background-image: url(./scissors.png);
+    background-position: center;
+}
+.pselected{
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px red;
+    background-image: url(./paper.png);
+    background-position: center;
+}
