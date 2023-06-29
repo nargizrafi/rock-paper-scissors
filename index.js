@@ -5,10 +5,17 @@ var compchoice = document.querySelector('.comp')
 var userwin = document.querySelector('.userwin')
 var compwin = document.querySelector('.compwin')
 var tied = document.querySelector('.tied')
+var gif = document.querySelector('.gif')
+var container = document.querySelector('.container')
 var compWin = 0
 var userWin = 0
 var tieds = 0
 var arr = ['r','p','s']
+
+setTimeout(function () {
+   gif.style.display='none'
+   container.style.display='flex'
+},2300)
 
 rock.onclick=function(){
 var index =  Math.floor(Math.random()*arr.length)
